@@ -11,7 +11,7 @@ from keras.preprocessing import image
 from keras.applications.mobilenet_v2 import preprocess_input
 
 # Load the skin analysis model
-model = load_model('C:/Users/IT TECH/Desktop/facerecognition/Face_recognition/backend/skin.h5', custom_objects={'SparseCategoricalCrossentropy': SparseCategoricalCrossentropy()})
+model = load_model('backend/skin.h5', custom_objects={'SparseCategoricalCrossentropy': SparseCategoricalCrossentropy()})
 
 @api_view(['POST'])
 def analyze_skin_api(request):
